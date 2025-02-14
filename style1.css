@@ -1,0 +1,68 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+    text-size-adjust: 30;
+}
+
+
+.nam{
+    border-radius: 90%;
+    position: left;
+}
+
+
+.h1{
+    color: black;
+    font-style: italic;
+    text-align: left;
+    background-position: left;
+    }
+
+.bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+}
+.bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.bar ul li a{
+    text-decoration: none;
+    color: #410668;
+    text-transform: uppercase;
+}
+.bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #23a7a7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.bar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.747);
+    font-style: italic ;
+}
